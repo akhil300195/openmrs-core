@@ -8,7 +8,7 @@ stage('SCM') {
 
 stage('Build the packages') {
     // mvn package
-     sh 'mvn package'
+     sh 'mvn clean package'
  }
 
 stage ('Archival') {
